@@ -1,11 +1,14 @@
-export default function ListaALunos({alunos, onEditar, onExcluir}){
+import "./ListaAlunos.css";
 
-    if(alunos.length === 0){
-        return <p> Nenhum Aluno cadastrado.</p>; 
+export default function ListaALunos({ alunos, onEditar, onExcluir }) {
+
+    if (alunos.length === 0) {
+        return <p className="sem-alunos">Nenhum aluno cadastrado.</p>;
     }
-    return(
-        <>
-            <table border="1">
+
+    return (
+        <div className="lista-alunos">
+            <table className="tabela-alunos">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -15,24 +18,33 @@ export default function ListaALunos({alunos, onEditar, onExcluir}){
                         <th>Ações</th>
                     </tr>
                 </thead>
+
                 <tbody>
-                    {
-                        alunos.map((aluno)=>(
-                           <tr key={aluno.id}>
+                    {alunos.map((aluno) => (
+                        <tr key={aluno.id}>
                             <td>{aluno.id}</td>
                             <td>{aluno.nome}</td>
                             <td>{aluno.curso}</td>
                             <td>{aluno.nota}</td>
                             <td>
-                                <button onClick={() => onEditar(aluno)}> Editar</button>
-                                <button onClick={() => onExcluir(aluno.id)}> Editar</button>
+                                <button 
+                                    className="btn-editar"
+                                    onClick={() => onEditar(aluno)}
+                                >
+                                    Editar
+                                </button>
+
+                                <button 
+                                    className="btn-excluir"
+                                    onClick={() => onExcluir(aluno.id)}
+                                >
+                                    Excluir
+                                </button>
                             </td>
-                           </tr> 
-                        ))
-                    }
+                        </tr>
+                    ))}
                 </tbody>
             </table>
-        </>
-    )
-
+        </div>
+    );
 }

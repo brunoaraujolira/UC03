@@ -1,0 +1,76 @@
+/* Container da lista */
+.lista-alunos {
+  margin-top: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Mensagem quando não há alunos */
+.sem-alunos {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Tabela */
+.tabela-alunos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+/* Cabeçalho */
+.tabela-alunos thead {
+  background-color: #2563eb;
+  color: white;
+}
+
+.tabela-alunos th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Linhas */
+.tabela-alunos td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Efeito hover */
+.tabela-alunos tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+/* Botões */
+.btn-editar {
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.btn-editar:hover {
+  background-color: #d97706;
+}
+
+.btn-excluir {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-excluir:hover {
+  background-color: #dc2626;
+}

@@ -1,0 +1,73 @@
+/* Container do formulário */
+.form-aluno {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Título */
+.form-aluno h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* Inputs */
+.form-aluno input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+/* Efeito ao clicar no input */
+.form-aluno input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Container dos botões */
+.form-botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Botão principal */
+.btn-salvar {
+  flex: 1;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn-salvar:hover {
+  background: #1d4ed8;
+}
+
+/* Botão cancelar */
+.btn-cancelar {
+  flex: 1;
+  background: #6b7280;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-cancelar:hover {
+  background: #4b5563;
+}
